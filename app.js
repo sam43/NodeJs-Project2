@@ -8,7 +8,7 @@ const app = express()
 const apiKey = '393e8f82b7da94f243f5cfbd6f7d1c2a'
 
 app.use(express.static('public'))
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
